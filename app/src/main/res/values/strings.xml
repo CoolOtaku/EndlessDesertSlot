@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Endless Desert Slot</string>
+
+    <string name="play_game">PLAY</string>
+    <string name="exit_game">QUIT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="okay">OK</string>
+    <string name="сhange_the_volume">Change the volume</string>
+
+    <string name="info_slot_1">The rules of the game are very simple and with free spins even easier!</string>
+    <string name="info_slot_2">Rules game:</string>
+    <string name="info_slot_3">♠ If there are 1 matches, the winning ratio will be equal to 2;\n♠ If there are 2 matches, the winning ratio will be equal to 3;\n♠ If there are 3 matches, the winning ratio will be equal to 4;\n♠ If there are 4 matches, the winning ratio will be equal to 7;</string>
+    <string name="info_slot_4">If you run out of coins, you will be automatically given 100.00 coins!</string>
+    <string name="info_slot_5">If the winning ratio is greater than 3, you will be given 10 free spins as a gift!</string>
+
+    <string name="you_have_points">Take 100.00 extra points!</string>
+</resources>

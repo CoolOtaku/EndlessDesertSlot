@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/MenuContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:background="@drawable/button_bg"
+            android:onClick="PlayGame"
+            android:text="@string/play_game"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:onClick="Settings"
+            android:text="@string/settings"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_bg"
+            android:onClick="ExitGame"
+            android:text="@string/exit_game"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="UsingOnClickInXml" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/settingsContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginVertical="30dp"
+        android:background="@drawable/settings_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:paddingHorizontal="5dp"
+                android:shadowColor="@color/yellow"
+                android:shadowDx="0.0"
+                android:shadowDy="0.0"
+                android:shadowRadius="20"
+                android:text="@string/settings"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingHorizontal="5dp"
+                android:text="@string/сhange_the_volume"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <SeekBar
+                android:id="@+id/seekVolume"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/musicOnOfImage"
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg"
+                android:onClick="musicOnOf"
+                android:padding="5dp"
+                app:srcCompat="@drawable/ic_music_off"
+                tools:ignore="OnClick,UsingOnClickInXml,SpeakableTextPresentCheck" />
+
+            <Button
+                android:layout_width="190dp"
+                android:layout_height="70dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="20dp"
+                android:background="@drawable/button_bg"
+                android:onClick="Settings"
+                android:text="@string/okay"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic"
+                tools:ignore="UsingOnClickInXml" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:srcCompat="@drawable/money" />
+
+        <TextView
+            android:id="@+id/textCoins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
